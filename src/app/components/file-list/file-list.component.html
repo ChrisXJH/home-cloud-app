@@ -1,0 +1,9 @@
+<ng-container *ngIf="(items$ | async) as items">
+  <ul>
+    <ng-container *ngFor="let item of items"
+      ><li>
+        <a href="{{ item.url }}" target="_blank">{{ item.name }}</a>
+      </li></ng-container
+    >
+  </ul>
+</ng-container>
